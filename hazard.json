@@ -1,0 +1,27 @@
+{
+  "format": "avsim-studio/1",
+  "title": "Phạm Văn Kiên — xe đạp lạng vào làn trước giao lộ",
+  "params": {
+    "cutT0": 5.0, "cutDur": 2.4, "cutV": 15.0, "pedT0": 9.6,
+    "pedV": 1.45, "busGo": 17.5, "cutDs": -4.0, "tgT": 0.9,
+    "mu": 0.8, "cutGap": 12.0, "cutBrake": 0.0,
+    "pedGap": 4.5, "pedLook": 1, "civil": true
+  },
+  "policy": {},
+  "ego": "planner",
+  "world": "town",
+  "hazards": [
+    {
+      "type": "bike", "x": 0.0, "lane": "E2", "d": -1.2,
+      "v": 3.0, "swerve": 2.0, "swDur": 1.9, "t0": 0.0, "trig": 9.0
+    }
+  ],
+  "space": {
+    "h0_x": [-5.0, 10.0],
+    "h0_v": [2.0, 4.0],
+    "h0_trig": [7.0, 13.0],
+    "h0_swDur": [1.9, 2.2]
+  },
+  "exposure": 0.002,
+  "why": "Đây là giả định thiết kế để kiểm thử, không phải tần suất đo ngoài đường. Xe đạp ở mép trái làn E2 (z = 5.25 - 1.2 = 4.05 m) lạng 2 m vào E1, kết thúc ở z = 2.05 m. Vận tốc 2–4 m/s (7.2–14.4 km/h) đại diện xe đạp chậm; thời gian lạng 1.9–2.2 s cho gia tốc ngang cực đại 2.04–2.73 m/s², dưới giới hạn 3 m/s². Vị trí ban đầu -5–10 m đặt xung đột trước giao lộ x=80, để kiểm tra phát hiện xâm lấn ngang độc lập với người đi bộ ở x=122. Kích hoạt khi khoảng cách dọc còn 7–13 m, tương ứng khoảng 0.7–1.5 s ở tốc độ đóng 8.5–10.5 m/s; đây là dải thử phản ứng muộn, không phải phân phối tự nhiên đã hiệu chỉnh. Exposure=0.002 là giả định vận hành có điều kiện: một chuyến gặp một xe đạp gần làn với xác suất giả định 0.1, và trong các lần gặp đó xác suất lạng vào làn là 0.02; tích bằng 0.002/chuyến. Báo cáo trình bày thêm độ nhạy 0.0002–0.02/chuyến; chưa có dữ liệu thực để xác nhận hai giả định này. Muốn thay thế cần video tuyến chạy đo số lần gặp và số lần lạng, không được diễn giải per_trip là rủi ro ngoài đời."
+}

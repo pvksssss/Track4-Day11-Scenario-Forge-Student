@@ -1,0 +1,86 @@
+[
+  {
+    "id": "B-01",
+    "label": "bus_bypass",
+    "event": {
+      "t": 12.4,
+      "f": 248,
+      "a": "ego",
+      "b": "C2",
+      "kind": "contact",
+      "x": 93.041748046875,
+      "z": 2.698118209838867,
+      "fake": false
+    },
+    "ghost_event": null
+  },
+  {
+    "id": "C-01",
+    "label": "crosswalk_block",
+    "event": {
+      "t": 20.05,
+      "f": 401,
+      "a": "ego",
+      "b": "P1",
+      "kind": "block",
+      "x": 121.61398315429688,
+      "z": 2.609783172607422,
+      "fake": false
+    },
+    "ghost_event": {
+      "t": 20.05,
+      "f": 401,
+      "a": "ego",
+      "b": "P1",
+      "kind": "block",
+      "x": 121.61398315429688,
+      "z": 2.609783172607422,
+      "fake": false
+    }
+  },
+  {
+    "id": "G-EXACT",
+    "label": "mine",
+    "event": {
+      "t": 4.65,
+      "f": 93,
+      "a": "ego",
+      "b": "H0",
+      "kind": "contact",
+      "x": 13.038082122802734,
+      "z": 2.358710289001465,
+      "fake": false
+    },
+    "ghost_event": null
+  },
+  {
+    "id": "FIX-B-01",
+    "label": "bus_bypass",
+    "event": null,
+    "ghost_event": {
+      "t": 12.4,
+      "f": 248,
+      "a": "ego",
+      "b": "C2",
+      "kind": "contact",
+      "x": 93.041748046875,
+      "z": 2.698118209838867,
+      "fake": false
+    }
+  },
+  {
+    "id": "FIX-B-02",
+    "label": "bus_bypass",
+    "event": null,
+    "ghost_event": {
+      "t": 12.5,
+      "f": 250,
+      "a": "ego",
+      "b": "C2",
+      "kind": "contact",
+      "x": 92.99950408935547,
+      "z": 2.5652217864990234,
+      "fake": false
+    }
+  }
+]
